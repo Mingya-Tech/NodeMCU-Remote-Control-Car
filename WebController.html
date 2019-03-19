@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+   <style>
+        body {
+            text-align: center;  
+        }
+        table {
+            margin: auto;
+        }
+        button {
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+    <script>
+        function move(direction) {
+            console.log(direction);
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET", direction, true);
+        }
+    </script>
+    <h3>NodeMCU Car Controller</h1>
+        <table>
+            <tr>
+                <td>1</td>
+                <td><button onclick="move('ahead')">前进</button></td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td><button onclick="move('left')">左转</button></td>
+                <td><button onclick="move('stop')">停止</button></td>
+                <td><button onclick="move('right')">右转</button></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><button onclick="move('back')">后退</button></td>
+                <td>9</td>
+            </tr>
+        </table>
+</html>
